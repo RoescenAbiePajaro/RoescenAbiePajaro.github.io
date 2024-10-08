@@ -1,4 +1,5 @@
-<script>// @ts-nocheck
+<script>
+// @ts-nocheck
 
     import Footer from "../components/Footer.svelte";
     import Header from "../components/Header.svelte";
@@ -12,7 +13,8 @@
 
     function goTop() {
         document.body.scrollIntoView();
-    }</script>
+    }
+</script>
 
 <div class="container relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen">
     <!-- Scroll to top button -->
@@ -22,9 +24,9 @@
         </button>
     </div>
     
-    <Header {y} {innerheight}></Header>
+    <Header {y} {innerHeight}></Header>
     <slot></slot>
     <Footer></Footer>
 </div>
 
-<svelte:window bind:scrolly="{y}" bind:innerheight bind:innerwidth></svelte:window>
+<svelte:window bind:scrollY="{y}" bind:innerHeight bind:innerWidth></svelte:window>

@@ -1,4 +1,4 @@
-name: Build and Deploy SvelteKit App
+name: Build SvelteKit App
 
 on:
   push:
@@ -32,7 +32,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './build' # Ensure this matches the output folder from your SvelteKit build
+          path: './build' # Match the output folder from the adapter
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}

@@ -11,7 +11,7 @@
           
         </div>
 
-        <p><b class="pr-2">Email</b>abiepajaro@gmail.com</p>
+        <p><b class="pr-2">Email</b>ab**@gmail.com</p>
         <p>
         </p>
         <p>
